@@ -5,9 +5,9 @@ _ = require "lodash"
 
 class Git
   @BASE_URL = "https://api.github.com/repos/chck/secretary"
-#  constructor: (repo) ->
-#    @BASE_URL = "https://api.github.com/repos/#{repo}"
-#      token = config.git.token
+  #  constructor: (repo) ->
+  #    @BASE_URL = "https://api.github.com/repos/#{repo}"
+  #      token = config.git.token
 
   createRelease: (suffix) ->
     data = {title: "Release_#{suffix}", head: "feature/with_git", base: "master"}
@@ -45,7 +45,19 @@ class Git
             committer: row.commit.committer.name,
             prNumber: getPRNumber(row.commit.message)
           }
+        ).filter((row) ->
+          row.prNumber?
+        ).groupBy((row) ->
+          row.committer
+#        ).map((row) ->
+#          console.log row
+#          _.map((row)-> row.prNumber)
         ).value()
+
+  createBody: (data) ->
+    return new Promise (resolve, reject) ->
+      resolve _.chain(data).map((row) -> row).value()
+#      for k,v of data
 
   getPRNumber = (message) ->
     prNumber = message.match(/^Merge pull request (#\d+) from/)
