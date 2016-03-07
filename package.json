@@ -1,6 +1,6 @@
 {
-  "name": "ixdr",
-  "version": "0.0.0",
+  "name": "secretary",
+  "version": "0.0.1",
   "private": true,
   "author": "chck <iwazaki_yuki@cyberagent.co.jp>",
   "description": "A simple helpful robot for your Company",
