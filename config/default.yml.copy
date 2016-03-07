@@ -1,0 +1,5 @@
+git:
+  base_uri: https://api.github.com/repos/USER/REPO
+  token: YOUR_GITHUB_TOKEN
+  base_branch: release
+  head_branch: master
