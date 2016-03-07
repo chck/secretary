@@ -1,7 +1,6 @@
 # secretary
 
-secretary is a chat bot built on the [Hubot][hubot] framework. 
-It may change your monotonous daily life by awesome commands.
+secretary is a chat bot built on the [Hubot][hubot] framework. It may change your monotonous daily life by awesome commands.
 
 ### Requirements
 
@@ -10,11 +9,11 @@ It may change your monotonous daily life by awesome commands.
     
 ### Install
     
-    %npm install
+    % npm install
     
 ### Run
 
-    %HUBOT_SLACK_TOKEN=YOUR_SLACK_TOKEN ./bin/hubot -a slack 
+    % HUBOT_SLACK_TOKEN=YOUR_SLACK_TOKEN ./bin/hubot -a slack 
     
 ### Debug Locally
 
