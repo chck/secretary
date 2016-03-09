@@ -3,3 +3,5 @@ git:
   token: YOUR_GITHUB_TOKEN
   base_branch: release
   head_branch: master
+
+prefix: xxx
