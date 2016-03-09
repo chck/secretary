@@ -5,6 +5,7 @@
   "author": "chck <iwazaki_yuki@cyberagent.co.jp>",
   "description": "A simple helpful robot for your Company",
   "dependencies": {
+    "config": "^1.19.0",
     "githubot": "^1.0.0",
     "hubot": "^2.17.0",
     "hubot-diagnostics": "0.0.1",
@@ -19,6 +20,7 @@
     "hubot-scripts": "^2.16.2",
     "hubot-shipit": "^0.2.0",
     "hubot-slack": "^3.4.2",
+    "js-yaml": "^3.5.3",
     "lodash": "^4.0.0",
     "q": "^1.4.1",
     "redis": "^2.4.2"
