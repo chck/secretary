@@ -1,3 +1,6 @@
+# Commands:
+#   hubot-release - Create pull request for release and reply with the url
+
 c = require('config')
 util = require('./lib/util')
 git = require('./lib/git')
